@@ -3,6 +3,81 @@
     //    width: 99vw;
     height: 100vh;
     .title {
-        margin-top: 20em;
+        margin-top: 2.9em;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 72px;
+        text-align: center;
+        color: $white;
+    }
+    .main-header {
+        margin-top: 0.17em;
+        font-size: 150px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: $white;
+        line-height: 0.9;
+        letter-spacing: -2px;
+        p {
+            font-size: 150px;
+        }
+    }
+    .line {
+        margin: auto;
+        margin-top: 4.2em;
+        width: 58px;
+        height: 3px;
+        background: $white;
+        text-align: center;
+    }
+    .main-btn {
+        display: block;
+        margin: 3.5em auto;
+        padding: 0.6em 2em;
+        border: 3px solid $white;
+        background: none;
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: $white;
+    }
+    .slide-bars {
+        margin-top: 11em;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        li {
+            margin-right: 2em;
+            .bar {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                .color {
+                    background: $upGradient;
+                    transition: 0.5s;
+                }
+                li {
+                    width: 70px;
+                    background: $white;
+                    height: 3px;
+                    margin-right: 0;
+                }
+            }
+            p {
+                margin-top: 0.3em;
+                font-size: 24px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                text-align: left;
+                color: $white;
+                span {
+                    font-weight: normal;
+                }
+            }
+        }
+        li:hover {
+            cursor: pointer;
+        }
     }
 }
