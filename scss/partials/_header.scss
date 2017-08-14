@@ -3,20 +3,25 @@ header {
     width: 100%;
     .logo {
         font-family: 'Montserrat', sans-serif;
-        margin: 0.4em 0 0 -0.8em;
         font-size: 30px;
         font-weight: bold;
         color: $white;
+        @media(min-width: 1200px) {
+            margin: 0.4em 0 0 -0.8em;
+        }
     }
     .menu {
-        position: absolute;
-        margin-left: -3em;
-        list-style-type: none;
-        margin-top: 1.8em;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        font-family: 'Montserrat', sans-serif;
+        display: none;
+        @media(min-width: 900px) {
+            position: absolute;
+            margin-left: -3em;
+            list-style-type: none;
+            margin-top: 1.8em;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            font-family: 'Montserrat', sans-serif;
+        }
         li {
             padding-right: 3.8em;
             a {
