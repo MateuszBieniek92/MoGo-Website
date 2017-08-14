@@ -1,0 +1,84 @@
+.section-one {
+    .header {
+        margin-top: 2em;
+    }
+    .description {
+        margin-top: 0.3em;
+    }
+    .line {
+        background: $upGradient;
+        margin-top: 2.2em;
+    }
+    .section-one-text {
+        font-size: 15px;
+        font-family: "Roboto", sans-serif;
+        text-align: justify;
+        color: $textColor;
+        margin: 3em auto;
+        @media(min-width: 450px) {
+            text-align: center;
+            margin: 3em 2em;
+        }
+        @media(min-width: 1100px) {
+            text-align: center;
+            margin: 3em 6em;
+        }
+    }
+    .section-one-images {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin: -10px;
+        @media(min-width: 450px) {
+            margin: 0em;
+        }
+        @media(min-width: 1100px) {
+            flex-direction: row;
+            margin-top: 7.2em;
+            margin-bottom: 7.5em;
+        }
+         :first-child {
+            background: url('../images/section-1/first-photo.png') no-repeat;
+        }
+         :nth-child(2) {
+            background: url('../images/section-1/second-photo.png') no-repeat;
+        }
+         :nth-child(3) {
+            background: url('../images/section-1/third-photo.png') no-repeat;
+        }
+         :first-child,
+         :nth-child(2),
+         :nth-child(3) {
+            background-size: cover;
+            @media(min-width: 450px) {
+                background-size: contain;
+            }
+        }
+        li {
+            height: 250px;
+            @media(min-width: 450px) {
+                margin: 0em auto;
+                width: 350px;
+            }
+            @media(min-width: 1100px) {
+                margin: 0;
+                margin-left: 2em;
+                width: 370px;
+            }
+        }
+    }
+}
+
+.header {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    color: $headerColor;
+}
+
+.description {
+    font-size: 30px;
+    color: $headerColor;
+    font-weight: bold;
+    text-align: center;
+}
