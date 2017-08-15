@@ -34,8 +34,12 @@
         }
         @media(min-width: 1100px) {
             flex-direction: row;
-            margin-top: 7.2em;
-            margin-bottom: 7.5em;
+            margin: 7.2em 0;
+            flex-wrap: wrap;
+            justify-content: center; 
+        }
+        @media(min-width: 1200px) {
+            flex-wrap: nowrap;
         }
          :first-child {
             background: url('../images/section-1/first-photo.png') no-repeat;
