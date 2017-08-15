@@ -4,4 +4,101 @@
             margin-top: 4.2em;
         }
     }
+    .s-four-content {
+        display: flex;
+        flex-direction: column;
+        @media(min-width: 1100px) {
+            flex-direction: row;
+        }
+    }
+    .section-four-image {
+        width: 106%;
+        background: url('../images/section-4/picture.png') no-repeat;
+        height: 415px;
+        margin: -10px;
+        @media(min-width: 450px) {
+            margin: 0 auto;
+            width: 570px;
+        }
+        @media(min-width: 1100px) {
+            width: 2700px;
+            margin-right: 2em;
+            background-size: contain;
+            margin-left: 2em;
+        }
+    }
+    .service-two-list {
+        width: 100%;
+        height: 415px;
+        margin-bottom: 5em;
+        @media(min-width: 1100px) {
+            width: 3000px;
+            margin: -0.8em 0;
+        }
+        dt {
+            border: 1px solid rgb(229, 229, 229);
+            font-size: 14px;
+            color: rgb(51, 51, 51);
+            margin-bottom: 1em;
+            ul {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                .list-icon,
+                .arrow-icon {
+                    background: url('../images/icons.png') no-repeat;
+                    width: 45px;
+                    height: 35px;
+                    display: inline-block;
+                    margin: 8px 0 5px 10px;
+                }
+                .arrow-icon {
+                    width: 30px;
+                    height: 25px;
+                    margin: 0.8em 0.8em 0.5em 0;
+                }
+                .list-one {
+                    background-position: 0px -653px;
+                }
+                .list-two {
+                    background-position: 0px -570px;
+                }
+                .list-three {
+                    background-position: 0px -487px;
+                }
+                .arrow-one,
+                .arrow-two,
+                .arrow-three {
+                    background-position: 0px -728px;
+                }
+                .list-desc {
+                    margin: 1.3em 0 0 1em;
+                    font-weight: bold;
+                    flex-grow: 1;
+                }
+            }
+        }
+        dd {
+            margin-top: -1em;
+            border: 1px solid rgb(229, 229, 229);
+            border-top: none;
+            overflow: auto;
+            text-align: left;
+            color: $textColor;
+            font-size: 15px;
+            padding: 20px;
+            font-family: "Roboto";
+            font-style: italic;
+            height: 169px;
+            margin-bottom: 1em;
+            line-height: 1.4;
+        }
+        dd:last-child {
+            border-bottom: 1px solid rgb(229, 229, 229);
+        }
+         :nth-child(4),
+         :nth-child(6) {
+            display: none;
+        }
+    }
 }

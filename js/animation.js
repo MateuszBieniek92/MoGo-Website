@@ -53,10 +53,4 @@ $(function () {
         barFour.removeClass('color');
     });
 
-
-
-
-
-
-
 });
