@@ -1,0 +1,89 @@
+.section-two {
+    .header {
+        margin-top: 2em;
+        @media(min-width: 1100px) {
+            margin-top: 4.1em;
+        }
+    }
+    .description {
+        margin-top: 0.3em;
+    }
+    .line {
+        background: $upGradient;
+        margin-top: 2.4em;
+    }
+    .services-one,
+    .services-two {
+        list-style-type: none;
+        margin-top: 3.9em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        @media(min-width: 1100px) {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        li {
+            margin-bottom: 2em;
+            width: 100%;
+            .services-icons {
+                background: url('../images/icons.png') no-repeat;
+                width: 40px;
+                height: 35px;
+                margin: 0.9em 0.5em 0 2em;
+                @media(min-width: 1100px) {
+                    margin: 1em 0.5em 5.5em 2em;
+                }
+            }
+            .s-one {
+                background-position: 0px -124px;
+            }
+            .s-two {
+                background-position: 0px -163px;
+            }
+            .s-three {
+                background-position: 0px -204px;
+            }
+            .s-four {
+                background-position: 0px -79px;
+            }
+            .s-five {
+                background-position: 0px -40px;
+            }
+            .s-six {
+                background-position: 0px 0px;
+            }
+            .services-text {
+                .s-header {
+                    color: $headerColor;
+                    line-height: 1.2;
+                    text-align: left;
+                    font-weight: bold;
+                    margin-bottom: 1em;
+                }
+                span {
+                    font-size: 15px;
+                    font-family: 'Roboto', sans-serif;
+                    color: $textColor;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    ul>:nth-child(1),
+    ul>:nth-child(2),
+    ul>:nth-child(3) {
+        @media(min-width: 1100px) {
+            border-bottom: 1px solid rgb(229, 229, 229);
+        }
+    }
+    .services-two {
+        margin: 0;
+        @media(min-width: 1100px) {
+            margin: 0.7em 0 3.2em 0;
+        }
+        li {
+            border: none;
+        }
+    }
+}
