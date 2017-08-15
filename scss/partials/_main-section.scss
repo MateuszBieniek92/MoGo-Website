@@ -63,11 +63,10 @@
     .slide-bars {
         display: none;
         @media(min-width: 1200px) {
-            margin-top: 10em;
-            margin-bottom: 0.5em;
             list-style-type: none;
             display: flex;
             flex-direction: row;
+            margin: 10em 0 0.5em -2em;
         }
         li {
             margin-right: 1em;

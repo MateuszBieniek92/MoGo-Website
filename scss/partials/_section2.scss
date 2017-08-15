@@ -28,6 +28,7 @@
             width: 100%;
             .services-icons {
                 background: url('../images/icons.png') no-repeat;
+                transition: 0.5s;
                 width: 40px;
                 height: 35px;
                 margin: 0.9em 0.5em 0 2em;
@@ -36,19 +37,19 @@
                 }
             }
             .s-one {
-                background-position: 0px -124px;
+                background-position: 0px -248px;
             }
             .s-two {
-                background-position: 0px -163px;
+                background-position: 0px -326px;
             }
             .s-three {
-                background-position: 0px -204px;
+                background-position: 0px -411px;
             }
             .s-four {
-                background-position: 0px -79px;
+                background-position: 0px -160px;
             }
             .s-five {
-                background-position: 0px -40px;
+                background-position: 0px -83px;
             }
             .s-six {
                 background-position: 0px 0px;
@@ -68,22 +69,49 @@
                     text-align: left;
                 }
             }
+            &:hover {
+                .services-icons {
+                    background: url('../images/icons.png') no-repeat;
+                    transition: 0.5s;
+                }
+                .s-one {
+                    background-position: 0px -288px;
+                }
+                .s-two {
+                    background-position: 0px -368px;
+                }
+                .s-three {
+                    background-position: 0px -450px;
+                }
+                .s-four {
+                    background-position: 0px -203px;
+                }
+                .s-five {
+                    background-position: 0px -124px;
+                }
+                .s-six {
+                    background-position: 0px -41px;
+                }
+                cursor: pointer;
+            }
         }
     }
-    ul>:nth-child(1),
-    ul>:nth-child(2),
-    ul>:nth-child(3) {
-        @media(min-width: 1100px) {
-            border-bottom: 1px solid rgb(229, 229, 229);
-        }
+}
+
+.services-one>:nth-child(1),
+.services-one>:nth-child(2),
+.services-one>:nth-child(3) {
+    @media(min-width: 1100px) {
+        border-bottom: 1px solid rgb(229, 229, 229);
     }
-    .services-two {
-        margin: 0;
-        @media(min-width: 1100px) {
-            margin: 0.7em 0 3.2em 0;
-        }
-        li {
-            border: none;
-        }
+}
+
+.services-two {
+    margin: 0;
+    @media(min-width: 1100px) {
+        margin: 0.7em 0 3.2em 0;
+    }
+    li {
+        border: none;
     }
 }
