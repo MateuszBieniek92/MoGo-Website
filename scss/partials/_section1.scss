@@ -1,6 +1,9 @@
 .section-one {
     .header {
         margin-top: 2em;
+        @media(min-width: 1100px) {
+            margin-top: 2em;
+        }
     }
     .description {
         margin-top: 0.3em;
@@ -36,7 +39,7 @@
             flex-direction: row;
             margin: 7.2em 0;
             flex-wrap: wrap;
-            justify-content: center; 
+            justify-content: center;
         }
         @media(min-width: 1200px) {
             flex-wrap: nowrap;
@@ -78,6 +81,10 @@
     font-family: 'Kaushan Script', cursive;
     text-align: center;
     color: $headerColor;
+    margin-top: 2em;
+            @media(min-width: 1100px) {
+            margin-top: 4.1em;
+        }
 }
 
 .description {
@@ -85,4 +92,14 @@
     color: $headerColor;
     font-weight: bold;
     text-align: center;
+     margin-top: 0.3em;
 }
+
+.line {
+    background: $upGradient;
+    margin-top: 2.4em;
+}
+
+
+
+
