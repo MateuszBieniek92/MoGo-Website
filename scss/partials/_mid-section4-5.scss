@@ -1,0 +1,45 @@
+.mid-section-4-5 {
+    background: #f8f8f8;
+    .left-slider-btn,
+    .right-slider-btn {
+        background: url('../images/icons.png') no-repeat;
+        width: 25px;
+        height: 35px;
+        margin-top: 5.4em;
+        @media(min-width: 450px) {
+            margin-top: 3.4em;
+        }
+    }
+    .left-slider-btn {
+        background-position: 0 -770px;
+        float: left;
+    }
+    .right-slider-btn {
+        background-position: -25px -800px;
+        float: right;
+    }
+    .comment-text {
+        margin: 1.5em auto;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Roboto";
+        color: $textColor;
+        font-style: italic;
+    }
+    .comment-person-name {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 1em;
+         :first-child {
+            margin-right: 0.5em;
+            margin-top: 0.4em;
+        }
+         :last-child {
+            font-size: 18px; //24px
+            font-family: 'Kaushan Script', cursive;
+            color: rgb(51, 51, 51);
+        }
+    }
+}
