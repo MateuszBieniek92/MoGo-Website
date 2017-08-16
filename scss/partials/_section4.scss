@@ -12,10 +12,9 @@
         }
     }
     .section-four-image {
-        width: 106%;
+        width: 100%;
         background: url('../images/section-4/picture.png') no-repeat;
         height: 415px;
-        margin: -10px;
         @media(min-width: 450px) {
             margin: 0 auto;
             width: 570px;
