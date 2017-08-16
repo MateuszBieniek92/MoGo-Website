@@ -12,7 +12,7 @@ A  website cutted from psd file.
 
 ## Demo:
 
-In progress... :)
+https://mateuszbieniek92.github.io/MoGo-Website/
 
 ## Demo image:
 

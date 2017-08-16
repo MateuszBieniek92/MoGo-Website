@@ -4,7 +4,7 @@
         flex-direction: column;
         list-style-type: none;
         margin-top: 2em;
-        @media(min-width: 1100px) {
+        @media(min-width: 1265px) {
             flex-direction: row;
             margin-top: 7em;
         }
@@ -21,19 +21,22 @@
                     @media(min-width: 450px) {
                         margin: 0 calc(50% - 190px);
                     }
-                    @media(min-width: 1100px) {
+                    @media(min-width: 1265px) {
                         margin: 0;
                         width: 380px;
                     }
                 }
                 .im-one {
                     background: url('../images/section-5/first-photo.png') no-repeat;
+                    background-size: cover;
                 }
                 .im-two {
                     background: url('../images/section-5/second-photo.png') no-repeat;
+                    background-size: cover;
                 }
                 .im-three {
                     background: url('../images/section-5/third-photo.png') no-repeat;
+                    background-size: cover;
                 }
                 .person-name {
                     color: $headerColor;

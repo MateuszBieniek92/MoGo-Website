@@ -1,0 +1,49 @@
+.mid-section-5-6 {
+    background: $midSection4-5Color;
+    .design-logos {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3em 0;
+        @media(min-width: 900px) {
+            margin: 3.4em 0 4.5em 0em;
+        }
+    }
+    .d-logo {
+        background: url('../images/mid-section-5-6/large icons.png') no-repeat;
+        width: 130px;
+        height: 125px;
+        margin-top: 1em;
+        @media(min-width: 1100px) {
+            margin-right: 5em;
+        }
+    }
+    .design-im-1 {
+        background-position: 0 0;
+        margin-left: 1.5em;
+        @media(min-width: 1100px) {
+            margin-left: 0;
+        }
+    }
+    .design-im-2 {
+        background-position: -217px 0px;
+    }
+    .design-im-3 {
+        background-position: -412px 0px;
+    }
+    .design-im-4 {
+        background-position: -633px 0px;
+    }
+    .design-im-5 {
+        background-position: -843px 0;
+    }
+    .design-im-6 {
+        background-position: -1065px 0;
+        margin-right: -0.5em;
+        @media(min-width: 1100px) {
+            margin-left: 0;
+        }
+    }
+}

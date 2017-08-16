@@ -1,8 +1,11 @@
 .main-section {
     background: url('../images/main-section/main-bg.png') no-repeat;
     height: 100vh;
-    @media(min-width: 850px) {
+    @media(min-width: 450px) {
         height: auto;
+    }
+    @media(min-width: 900px) {
+        height: 100vh;
     }
     .title {
         margin-top: 4.9em;
@@ -12,6 +15,7 @@
         color: $white;
         @media(min-width: 450px) {
             font-size: 50px;
+            margin-top: 0.9em;
         }
         @media(min-width: 900px) {
             margin-top: 2.9em;
