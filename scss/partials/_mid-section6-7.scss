@@ -1,0 +1,87 @@
+.mid-section-6-7 {
+    background: $midSection4-5Color;
+    .left-slider-btn,
+    .right-slider-btn {
+        background: url('../images/icons.png') no-repeat;
+        width: 25px;
+        height: 35px;
+        margin-top: 5.4em;
+        transition: 0.3s;
+        @media(min-width: 450px) {
+            margin-top: 3.4em;
+        }
+        @media(min-width: 1100px) {
+            margin-top: 8em;
+        }
+        &:hover {
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+    .left-slider-btn {
+        background-position: 0 -770px;
+        float: left;
+        &:hover {
+            background-position: -25px -770px;
+        }
+    }
+    .right-slider-btn {
+        background-position: -25px -800px;
+        float: right;
+        &:hover {
+            background-position: 0 -800px;
+        }
+    }
+    .comments-two {
+        display: flex;
+        flex-direction: row;
+        .comment-two-text {
+            line-height: 1.5;
+            margin: 1.5em auto;
+            text-align: center;
+            font-size: 18px;
+            font-family: "Roboto";
+            color: $textColor;
+            font-style: italic;
+            @media(min-width: 1100px) {
+                margin-top: 3em;
+                text-align: left;
+                font-size: 22px;
+            }
+        }
+        .comment-two-person-name {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-top: 1em;
+            @media(min-width: 1100px) {
+                justify-content: flex-start;
+            }
+             :first-child {
+                margin-right: 0.5em;
+                margin-top: 0.4em;
+            }
+             :last-child {
+                font-size: 18px;
+                font-family: 'Kaushan Script';
+                font-style: normal;
+                color: $headerColor;
+                @media(min-width: 1100px) {
+                    font-size: 22px;
+                }
+            }
+        }
+        .comment-two-image {
+            display: none;
+            @media(min-width: 1150px) {
+                display: inline-block;
+                background: url('../images/section-6/slider-photo.png') no-repeat;
+                background-size: contain;
+                width: 345px;
+                height: 150px;
+                margin: 4.2em 4em 4em 0;
+            }
+        }
+    }
+}
