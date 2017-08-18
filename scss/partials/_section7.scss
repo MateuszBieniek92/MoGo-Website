@@ -27,6 +27,7 @@
                 .person-name,
                 .person-prof,
                 .section-text {
+                    text-align: center;
                     @media (min-width: 900px) {
                         text-align: left;
                     }
