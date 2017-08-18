@@ -38,26 +38,28 @@
                     background: url('../images/section-5/third-photo.png') no-repeat;
                     background-size: cover;
                 }
-                .person-name {
-                    color: $headerColor;
-                    text-align: center;
-                    font-weight: bold;
-                    margin-top: 1.5em;
-                }
-                .person-prof {
-                    color: $textColor;
-                    text-align: center;
-                    font-style: italic;
-                    font-family: 'Roboto', sans-serif;
-                    font-size: 15px;
-                    margin-top: 0.8em;
-                    letter-spacing: -0.4px;
-                    margin-bottom: 2em;
-                    @media(min-width: 1100px) {
-                        margin-bottom: 7.7em;
-                    }
-                }
             }
         }
+    }
+}
+
+.person-name {
+    color: $headerColor;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+
+.person-prof {
+    color: $textColor;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 0.8em;
+    letter-spacing: -0.4px;
+    margin-bottom: 2em;
+    @media(min-width: 1100px) {
+        margin-bottom: 7.7em;
     }
 }

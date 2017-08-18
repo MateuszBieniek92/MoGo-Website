@@ -1,0 +1,83 @@
+.section-seven {
+    background: url('../images/section-7/section-7-bg.png') no-repeat;
+    background-size: cover;
+    .col-6 {
+        width: 100%;
+        @media (min-width: 900px) {
+            width: 50%
+        }
+    }
+    .clients-list {
+        list-style-type: none;
+        justify-content: flex-start;
+        margin-top: 5em;
+        margin-bottom: 3em;
+        li {
+            display: flex;
+            flex-direction: column;
+            @media (min-width: 900px) {
+                flex-direction: row;
+            }
+            .clients-comment {
+                text-align: left;
+                @media (min-width: 900px) {
+                    flex-basis: 80%;
+                    margin-left: 1.5em;
+                }
+                .person-name,
+                .person-prof,
+                .section-text {
+                    @media (min-width: 900px) {
+                        text-align: left;
+                    }
+                }
+                .person-name {
+                    margin-top: 0.5em;
+                }
+                .person-prof {
+                    margin-bottom: 1.2em;
+                    margin-top: 0.6em;
+                }
+                .line {
+                    margin-top: -1.07em;
+                    @media (min-width: 900px) {
+                        margin: 0;
+                    }
+                }
+                .section-text {
+                    margin: 1.5em 0;
+                }
+            }
+        }
+         :nth-child(2),
+         :nth-child(4) {
+            .clients-image {
+                @media (min-width: 900px) {
+                    margin-left: 2em;
+                    margin-bottom: 6.8em;
+                }
+            }
+        }
+    }
+    .clients-image {
+        width: 110px;
+        height: 120px;
+        margin: 0 auto;
+        @media (min-width: 900px) {
+            float: left;
+            width: 130px;
+        }
+    }
+    .client-one {
+        background: url('../images/section-7/client-comment-1.png') no-repeat;
+    }
+    .client-two {
+        background: url('../images/section-7/client-comment-2.png') no-repeat;
+    }
+    .client-three {
+        background: url('../images/section-7/client-comment-3.png') no-repeat;
+    }
+    .client-four {
+        background: url('../images/section-7/client-comment-4.png') no-repeat;
+    }
+}
