@@ -54,6 +54,9 @@
          :nth-child(4) {
             .clients-image {
                 @media (min-width: 900px) {
+                    margin-bottom: 6.8em;
+                }
+                @media (min-width: 1100px) {
                     margin-left: 2em;
                     margin-bottom: 6.8em;
                 }
