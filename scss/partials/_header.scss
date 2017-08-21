@@ -6,6 +6,7 @@ header {
         font-size: 30px;
         font-weight: bold;
         color: $white;
+        margin: 0.4em 0 0 0;
         @media(min-width: 1200px) {
             margin: 0.4em 0 0 -0.8em;
         }
@@ -13,8 +14,6 @@ header {
     .menu {
         display: none;
         @media(min-width: 900px) {
-            position: absolute;
-            margin-left: -3em;
             list-style-type: none;
             margin-top: 1.8em;
             display: flex;
@@ -63,6 +62,42 @@ header {
                 cursor: pointer;
             }
         }
+    }
+    .hamburger {
+        float: right;
+        margin: 1.3em;
+        @media (min-width: 900px) {
+            display: none;
+        }
+        &.is-active {
+            transition: all 0.3s ease-in-out;
+            transition-delay: 0.6s;
+            transform: rotate(45deg);
+            .bar:nth-child(2) {
+                width: 0px;
+            }
+            .bar:nth-child(1),
+            .bar:nth-child(3) {
+                transition-delay: 0.3s;
+            }
+            .bar:nth-child(1) {
+                transform: translateY(9px);
+            }
+            .bar:nth-child(3) {
+                transform: translateY(-13px) rotate(90deg);
+            }
+        }
+    }
+    .bar {
+        width: 35px;
+        height: 4px;
+        background-color: $white;
+        display: block;
+        margin: 7px auto;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger:hover {
+        cursor: pointer;
     }
 }
 

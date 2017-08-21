@@ -54,26 +54,43 @@ $(function () {
     });
 
     // counter mid section 1-2
-    
+
     let countNumbers = $('.count');
+
+    function counter() {
+        countNumbers.each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    }
+
+    /// hamburger animation 
+
+    let hamburger = $('.hamburger');
+
+    function hamAnimate() {
+        hamburger.on("click", function () {
+            $(this).toggleClass("is-active");
+        });
+    };
+
     
-    countNumbers.each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 4000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
-    });
-});
     
     
     
     
     
+    // functions start
     
+    counter();
+    hamAnimate();
     
-    
+
 });
