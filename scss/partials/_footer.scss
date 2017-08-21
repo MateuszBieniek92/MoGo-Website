@@ -1,0 +1,37 @@
+footer {
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        .text-and-social {
+            background: lime;
+            border: 1px solid red;
+        }
+        .blogs {
+            background: red;
+        }
+        .instagram-images {
+            background: blue;
+        }
+        .col-5 {
+            width: 100%;
+            @media (min-width: 900px) {
+                width: 41.66667%;
+            }
+        }
+        .col-4 {
+            width: 100%;
+            @media (min-width: 900px) {
+                width: 33.33333%;
+            }
+        }
+        .col-3 {
+            width: 100%;
+            @media (min-width: 900px) {
+                width: 25%;
+            }
+        }
+    }
+}
+
