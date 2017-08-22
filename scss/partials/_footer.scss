@@ -50,11 +50,50 @@ footer {
             }
         }
         .blogs {
-            background: red;
+            .footer-inner-header {
+                font-size: 14px;
+                color: $headerColor;
+                font-weight: bold;
+            }
+            .blogs-list {
+                list-style-type: none;
+                li {
+                    margin-top: 2em;
+                    .small-image {
+                        background: url('../images/footer/blogs-photos.png') no-repeat;
+                        width: 120px;
+                        height: 80px;
+                    }
+                    .small-one {
+                        background-position: 0 0;
+                    }
+                    .small-two {
+                        background-position: 0 -110px;
+                    }
+                    .small-three {
+                        background-position: 0 -220px;
+                    }
+                    .blog-desc {
+                        padding: 0;
+                        padding-left: 1em;
+                        text-align: left;
+                        color: $headerColor;
+                        line-height: 1.5;
+                        font-size: 12px;
+                        font-weight: bold;
+                        margin-bottom: 2em;
+                        .blog-date {
+                            font-size: 13px;
+                            font-family: "Roboto";
+                            font-style: italic;
+                            color: $textColor;
+                            margin-top: 0.8em;
+                        }
+                    }
+                }
+            }
         }
-        .instagram-images {
-            background: blue;
-        }
+        .instagram-images {}
         .col-5 {
             width: 100%;
             @media (min-width: 900px) {
