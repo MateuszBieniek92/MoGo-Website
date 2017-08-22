@@ -5,8 +5,49 @@ footer {
         flex-wrap: wrap;
         width: 100%;
         .text-and-social {
-            background: lime;
-            border: 1px solid red;
+            .logo {
+                color: #cccccc;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .section-text {
+                color: $textColor;
+            }
+            .followers-text {
+                font-size: 15px;
+                color: $headerColor;
+                line-height: 1.2;
+                text-align: left;
+                border-bottom: 1px solid $midSection4-5Color;
+                padding-bottom: 1em;
+                margin-bottom: 1em;
+                span {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+            .follow-and-icons {}
+            form {
+                 :first-child {
+                    border: 1px solid $midSection4-5Color;
+                    height: 3em;
+                    color: $midSection4-5Color;
+                    margin-bottom: 2em;
+                }
+                 ::placeholder {
+                    color: $midSection4-5Color;
+                }
+            }
+            .submit-btn {
+                margin-left: -0.3em;
+                height: 2.8em;
+                font-size: 15px;
+                font-weight: bold;
+                padding: 0 1.3em;
+                border: none;
+                color: white;
+                background: $aqua;
+            }
         }
         .blogs {
             background: red;
@@ -34,4 +75,3 @@ footer {
         }
     }
 }
-
