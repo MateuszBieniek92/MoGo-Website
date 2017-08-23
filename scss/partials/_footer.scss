@@ -44,8 +44,68 @@ footer {
                 margin-bottom: 1em;
                 font-style: italic;
                 font-size: 14px;
+                padding: 0;
+            }
+            .social-icons-list {
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                .social-media-icons {
+                    background: url('../images/social-media-icons.png') no-repeat;
+                    width: 20px;
+                    height: 20px;
+                    transition: 0.5s;
+                    margin-left: 0.5em;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                .social-one {
+                    background-position: 0 0;
+                    &:hover {
+                        background-position: 0 -27px;
+                    }
+                }
+                .social-two {
+                    background-position: -26px 0;
+                    &:hover {
+                        background-position: -26px -26px;
+                    }
+                }
+                .social-three {
+                    background-position: -55px 0;
+                    &:hover {
+                        background-position: -55px -27px;
+                    }
+                }
+                .social-four {
+                    background-position: -84px 0;
+                    &:hover {
+                        background-position: -84px -27px;
+                    }
+                }
+                .social-five {
+                    background-position: -115px 0;
+                    &:hover {
+                        background-position: -115px -27px;
+                    }
+                }
+                .social-six {
+                    background-position: -145px 0;
+                    &:hover {
+                        background-position: -145px -27px;
+                    }
+                }
+                .social-seven {
+                    background-position: -174px 0;
+                    &:hover {
+                        background-position: -174px -27px;
+                    }
+                }
             }
             form {
+                padding: 0;
                  :first-child {
                     border: 1px solid $midSection4-5Color;
                     height: 3em;
