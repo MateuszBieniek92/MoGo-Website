@@ -81,16 +81,78 @@ $(function () {
         });
     };
 
-    
-    
-    
-    
-    
-    
+    // slider mid-section-4-5
+
+    const $commentSlider = $('.comments-slider');
+    const $firstSlide = $commentSlider.children().first();
+    const $secondSlide = $commentSlider.children().eq(1);
+    const $thirdSlide = $commentSlider.children().last();
+    $position = 0;
+
+    const $leftCommentSliderBtn = $('.left-comment-btn');
+    const $rightCommentSliderBtn = $('.right-comment-btn');
+
+    console.log($firstSlide, $secondSlide, $thirdSlide);
+
+
+    $firstSlide.fadeIn(1000).css('display', 'flex');
+    $secondSlide.css('display', 'none');
+    $thirdSlide.css('display', 'none');
+
+    function slide(auto) {
+        if (auto === true) {
+            $position++;
+            if ($position === 3) {
+                $position = 0;
+            }
+        }
+        if (($position) === 0) {
+            $firstSlide.fadeIn(1000).css('display', 'flex');
+            $secondSlide.css('display', 'none');
+            $thirdSlide.css('display', 'none');
+        } else if (($position) === 1 || ($position) === -2) {
+            $firstSlide.css('display', 'none');
+            $secondSlide.fadeIn(1000).css('display', 'flex');
+            $thirdSlide.css('display', 'none');
+        } else if (($position) === 2 || ($position) === -1) {
+            $firstSlide.css('display', 'none');
+            $secondSlide.css('display', 'none');
+            $thirdSlide.fadeIn(1000).css('display', 'flex');
+        }
+    }
+
+    function rightCommentButton() {
+        const widthNext = $rightCommentSliderBtn.outerWidth();
+        time = 500;
+        $rightCommentSliderBtn.on('click', function () {
+            $position += 1;
+            if ($position === 3) {
+                $position = 0;
+            }
+            slide();
+        });
+
+    };
+
+    function leftCommentButton() {
+        const widthNext = $leftCommentSliderBtn.outerWidth();
+        time = 500;
+        $leftCommentSliderBtn.on('click', function () {
+            $position -= 1;
+            if ($position === 3 || $position === -3) {
+                $position = 0;
+            }
+            slide();
+            console.log($position);
+        });
+    };
+
+
     // functions start
-    
+
     counter();
     hamAnimate();
-    
+    rightCommentButton();
+    leftCommentButton();
 
 });
