@@ -92,8 +92,6 @@ $(function () {
     const $leftCommentSliderBtn = $('.left-comment-btn');
     const $rightCommentSliderBtn = $('.right-comment-btn');
 
-    console.log($firstSlide, $secondSlide, $thirdSlide);
-
 
     $firstSlide.fadeIn(1000).css('display', 'flex');
     $secondSlide.css('display', 'none');
@@ -147,6 +145,69 @@ $(function () {
         });
     };
 
+    // slider mid-section-6-7
+
+    const $otherCommentSlider = $('.other-comments-slider');
+    const $firstComment = $otherCommentSlider.children().first();
+    const $secondComment = $otherCommentSlider.children().eq(1);
+    const $thirdComment = $otherCommentSlider.children().last();
+    $position = 0;
+
+    const $leftOtherCommentSliderBtn = $('.left-other-btn');
+    const $rightOtherCommentSliderBtn = $('.right-other-btn');
+
+
+    $firstComment.fadeIn(1000).css('display', 'flex');
+    $secondComment.css('display', 'none');
+    $thirdComment.css('display', 'none');
+
+    function slideOtherComment(auto) {
+        if (auto === true) {
+            $position++;
+            if ($position === 3) {
+                $position = 0;
+            }
+        }
+        if (($position) === 0) {
+            $firstComment.fadeIn(1000).css('display', 'flex');
+            $secondComment.css('display', 'none');
+            $thirdComment.css('display', 'none');
+        } else if (($position) === 1 || ($position) === -2) {
+            $firstComment.css('display', 'none');
+            $secondComment.fadeIn(1000).css('display', 'flex');
+            $thirdComment.css('display', 'none');
+        } else if (($position) === 2 || ($position) === -1) {
+            $firstComment.css('display', 'none');
+            $secondComment.css('display', 'none');
+            $thirdComment.fadeIn(1000).css('display', 'flex');
+        }
+    }
+
+    function rightOtherCommentButton() {
+        const widthNext = $rightCommentSliderBtn.outerWidth();
+        time = 500;
+        $rightOtherCommentSliderBtn.on('click', function () {
+            $position += 1;
+            if ($position === 3) {
+                $position = 0;
+            }
+            slideOtherComment();
+        });
+
+    };
+
+    function leftOtherCommentButton() {
+        const widthNext = $leftCommentSliderBtn.outerWidth();
+        time = 500;
+        $leftOtherCommentSliderBtn.on('click', function () {
+            $position -= 1;
+            if ($position === 3 || $position === -3) {
+                $position = 0;
+            }
+            slideOtherComment();
+            console.log($position);
+        });
+    };
 
     // functions start
 
@@ -154,5 +215,7 @@ $(function () {
     hamAnimate();
     rightCommentButton();
     leftCommentButton();
+    rightOtherCommentButton();
+    leftOtherCommentButton();
 
 });
