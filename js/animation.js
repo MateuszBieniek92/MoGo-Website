@@ -209,6 +209,45 @@ $(function () {
         });
     };
 
+    // show-hide btns
+
+    const $dt = $('.service-two-list').find('dt');
+    const $dtOne = $dt.eq(0);
+    const $dtTwo = $dt.eq(1);
+    const $dtThree = $dt.eq(2);
+    
+    $dtOne.next().slideUp().addClass('hide');
+    $dtOne.next().slideDown();
+    $dtThree.next().slideUp().addClass('hide');
+    $dtTwo.next().slideUp().addClass('hide');
+
+    function showHideBtns() {
+
+        $dtOne.on('click', function () {
+            $(this).next().slideToggle().toggleClass('hide');
+            if ($dtThree.not('.hide') || $dtTwo.not('.hide')) {
+                $dtThree.next().slideUp().addClass('hide');
+                $dtTwo.next().slideUp().addClass('hide');
+            }
+
+        })
+        $dtTwo.on('click', function () {
+            $(this).next().slideToggle().toggleClass('hide');
+            if ($dtOne.not('.hide') || $dtThree.not('.hide')) {
+                $dtOne.next().slideUp().addClass('hide');
+                $dtThree.next().slideUp().addClass('hide');
+            }
+        })
+        $dtThree.on('click', function () {
+            $(this).next().slideToggle().toggleClass('hide');
+            if ($dtOne.not('.hide') || $dtTwo.not('.hide')) {
+                $dtOne.next().slideUp().addClass('hide');
+                $dtTwo.next().slideUp().addClass('hide');
+            }
+
+        })
+    }
+
     // functions start
 
     counter();
@@ -217,5 +256,6 @@ $(function () {
     leftCommentButton();
     rightOtherCommentButton();
     leftOtherCommentButton();
+    showHideBtns();
 
 });
